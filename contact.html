@@ -9,7 +9,7 @@
       <link rel="icon" href="pics/icon.png">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="contactCss.css">
-      <script src ="script.js" ></script>
+      <script src ="cscript.js" ></script>
       <script src="Mail.php"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
       <meta charset="UTF-8">
   </head>
 
-  <body onload="onLoad()" id=body class=dark-mode>    
+  <body onload="onLoad();">    
 
     <div class="navbar">            
       <a id="top" href="index.html">Home</a>          
@@ -33,7 +33,7 @@
 
     <div class="container">
       <div style="text-align:center">
-        <h2>Contact Us</h2>
+        <h2 id="contactus1">Contact Us</h2>
         <p></p>
       </div>
       <div class="row">
@@ -41,17 +41,17 @@
           <img id="border" src="pics/Mail.jpg" border="10"  text-shadow="10px 10px 5px grey" style="width:100%">
         </div>
         <div class="column">
-          <form action="https://formspree.io/#.com" method="POST">
+          <form action="https://formspree.io/email@domain.tld" method="POST">
 
             <label for="Email">Email</label>
             <input class="country" type="text" id="Email" name="Email" placeholder="Email">
-            <label for="fname">First Name</label>
+            <label id="fname" for="fname">First Name</label>
             <input class="country" type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="lname">Last Name</label>
+            <label id="lname" for="lname">Last Name</label>
             <input class="country" type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="country">Country</label>
+            <label id="country" for="country">Country</label>
             <select  class="country" name="country">
-              <option class="country" class value="SelectCountry">Select country...</option>
+              <option id="sc" class="country" class value="SelectCountry">Select country...</option>
               <option class="country" value="Afghanistan">Afghanistan</option>
               <option class="country" value="Albania">Albania</option>
               <option class="country" value="Algeria">Algeria</option>
@@ -279,7 +279,7 @@
 
 
             </select>
-            <label for="subject">Subject</label>
+            <label id="subject" for="subject">Subject</label>
             <textarea class="country" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
             <input type="submit" value="Submit" sendto>
           </form>

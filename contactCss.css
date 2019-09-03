@@ -74,13 +74,13 @@
     background-color: black;
   }
 
+
   .navbar {  
     overflow: hidden;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
     opacity: 100%;
-  
     transition: z-index 0s 0s; 
     z-index: 20;
   
@@ -96,6 +96,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
+    margin: 0;
     
   }
   
@@ -103,19 +104,6 @@
     cursor: pointer
   }
   
-  .topnav a.active {
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  .topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-left: 1010px;
-    font-size: 17px;
-  }
   
   @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
@@ -123,6 +111,7 @@
       display: block;
       text-align: left;
       width: 100%;
+      max-width: 400px;
       margin: 0;
       padding: 14px;
     }
