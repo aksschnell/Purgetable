@@ -1,0 +1,244 @@
+<!DOC TYPE HTML>
+
+<html>
+  
+  <head>
+
+      <title>Purgetable</title>      
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="Css_Style.css">
+      <script src ="script.js" ></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="HandHeldFriendly" content="true" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  </head>
+
+
+  <body onload="onLoad()" id=body class=dark-mode>    
+  
+   
+    
+    <div class="scrollbar">
+      <div class="overflow"></div>
+    </div>
+
+    
+    <div class="navbar">            
+      <a id="top" href="index.html">Home</a>          
+      <a id="about" href="about.html">About us</a>
+      <a id="contact" href="contact.html">Contact</a>  
+      <img onclick="flagClick()" id="flag"> 
+          </div>      
+
+    
+
+          
+    
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">      
+          <div class="picbox">
+        <img onclick="rm1()" src="pics/slideshow/1.jpg">
+            </div>          
+               
+        <h1 class="ssh" id="webdev1" ></h1>        
+      
+      
+           
+      </div>
+      
+
+      <div class="mySlides fade">
+          <div class="picbox">
+        <img onclick="trans1()" src="pics/slideshow/translation.jpg"> 
+          </div>
+        <h1 class="ssh" id="trans1"> Translation</h1>
+          
+      </div>
+      
+      <div class="mySlides fade">
+          <div class="picbox">
+        <img onclick="rm1()" src="pics/slideshow/2.jpg">
+      </div> 
+        <h1 class="ssh" id="webdev2"></h1>
+      
+      </div>
+      
+      <div class="mySlides fade">
+          <div class="picbox">
+        <img onclick="trans1()" src="pics/slideshow/translation.jpg"> 
+          </div>
+
+        <h1 class="ssh" id="trans2"></h1>
+       
+      </div>
+      
+     
+      
+      </div>
+    </div>
+    <div style="height: 300px;">
+      </div>
+      <br>
+      
+
+
+      <!-- Der her skal være her for at slideshowet virker, spørg mig ikke hvorfor ¯\_(ツ)_/¯ -->
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    
+
+      
+
+
+      
+
+
+<div style="height: 1000px;">
+</div>
+
+
+
+
+
+
+<h1 class="white" id="webdev"> Website Development </h1>
+
+<div style="height: 65px;">
+</div>
+
+
+
+<img id="webdevpic" src="pics/webdev.jpg">
+<div id="webtxt">
+    
+    <h3 class="white" id="persweb"> Personal Website </h3>
+
+<p id="p1">We offer a guranteed fast delivery of your next personal website </p>
+<p id="p2">We offer the follwing features:</p>
+
+
+
+<ul class="list" >
+  <li class="white" id="li1">Portfolio Display</li>
+  <li class="white" id="li2"> Your skills</li>
+  <li class="white" id="li3">Previous work experiance</li>
+  <li class="white" id="li4">Blog</li> 
+  <li class="white" id="li5">Contact page with your social media</li>
+  <li class="white" id="li6">Other costume requirements as requested by the client</li>
+</ul>  
+
+<p id="p3"> Starting at $50</p>
+
+
+
+
+<center>
+
+<button id="ordernow1"> <a href="#translation"></a> Order now</button></a>      
+</center>
+
+
+</div>
+
+<div style="height: 100px;">
+  </div>  
+
+
+
+
+
+</div>
+<div id="td"> 
+
+  <br>
+  <br>
+  <br>
+
+
+
+<h1 id="translation"> Translation </h1>
+
+<div style="height: 65px;">
+</div>
+
+
+
+
+
+
+<img id="transpic" src="pics/trans.jpg">
+<div id="webtxt">
+
+    <h3 id="persweb2"> Top quality Danish-English translation </h3>
+
+<p id="p1_2">We offer a guranteed fast delivery of your next Danish-English translation </p>
+<p id="p2_2">Choose from the following:</p>
+
+
+<ul class="list" >
+  <li id="l1_2">500+ word translation </li>
+  <li id="l2_2">Proofreading</li> 
+</ul>  
+
+<p id="l3_2"> Starting at $5</p>
+
+
+<p id="feelfree"> Do you have a special offer? <br> Feel free to <a href="contact.html">contact us</a></p>
+
+
+<center>
+<button id="ordernow2"> <a  href="#translation"></a> Order now</button></a>
+</center>
+</div>
+
+
+
+
+
+
+
+
+
+<div style="height: 100px;">
+  </div>
+      
+    
+    <p id="footer">© Purgetable Freelance</p>
+    
+  </div>
+
+    <script>
+  
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5 * 1000); // Change image every 2 seconds
+        }
+        
+        
+        </script>
+
+  </body>
+
+</html>
