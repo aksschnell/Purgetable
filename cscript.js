@@ -43,6 +43,9 @@ function flagClick()
 
 function  danish ()
 {     
+    document.getElementById("top").innerHTML = "Hjem";
+    document.getElementById("about").innerHTML = "Om us";
+    document.getElementById("contact").innerHTML = "Kontakt";
     document.getElementById("contactus1").innerHTML = "Konakt os";
     document.getElementById("fname").innerHTML = "Fornavn"; 
     document.getElementById("lname").innerHTML = "Efternavn";
@@ -55,7 +58,9 @@ function  danish ()
 
 function english ()
 {
-   
+    document.getElementById("top").innerHTML = "Home";
+    document.getElementById("about").innerHTML = "About us";
+    document.getElementById("contact").innerHTML = "Contact";
     document.getElementById("contactus1").innerHTML = "Contact us";
     document.getElementById("fname").innerHTML = "First name";
     document.getElementById("lname").innerHTML = "Last name";
