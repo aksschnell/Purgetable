@@ -27,15 +27,9 @@
     <div class="navbar">            
       <a id="top" href="index.html">Home</a>          
       <a id="about" href="about.html">About us</a>
-      <a id="contact" href="contact.html">Contact</a>  
-      <img onclick="flagClick();" id="flag"> 
-          </div>      
-
-    
-
-      
-    
-
+      <a id="contact" href="contact.html">Contact</a>   
+          </div>
+          <img onclick="flagClick();" id="flag"> 
     <div class="slideshow-container">
 
       <div class="mySlides fade">      
@@ -44,12 +38,9 @@
             </div>          
                
         <h1 class="ssh" id="webdev1" ></h1>        
-      
-      
-           
+                       
       </div>
       
-
       <div class="mySlides fade">
           <div class="picbox">
         <img onclick="trans1()" src="pics/slideshow/translation.jpg"> 
@@ -59,7 +50,7 @@
       </div>
       
       <div class="mySlides fade">
-          <div class="picbox">
+          <div class="picbox">  
         <img onclick="rm1()" src="pics/slideshow/2.jpg">
       </div> 
         <h1 class="ssh" id="webdev2"></h1>
@@ -75,37 +66,22 @@
        
       </div>
       
-     
+           <!-- Der her skal være her for at slideshowet virker, spørg mig ikke hvorfor ¯\_(ツ)_/¯ -->
+           <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
       
       </div>
-    </div>
+   
     <div style="height: 300px;">
       </div>
-      <br>
-      
-
-
-      <!-- Der her skal være her for at slideshowet virker, spørg mig ikke hvorfor ¯\_(ツ)_/¯ -->
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-    
-
-      
-
-
-      
 
 
 <div style="height: 1000px;">
 </div>
-
-
-
-
 
 
 <h1 class="white" id="webdev3"> Website Development </h1>
@@ -149,8 +125,6 @@
 
 <div style="height: 100px;">
   </div>  
-
-
 
 
 
@@ -216,25 +190,20 @@
 
     <script>
   
-        var slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 5 * 1000); // Change image every 2 seconds
-        }
+     var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 60 * 1000); // Change image every 2 seconds
+}
         
         
         </script>

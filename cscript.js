@@ -20,23 +20,19 @@ if(localStorage.getItem("cur") == null)
     }
 }
 
-
 function flagClick()
 {
-
     if(localStorage.getItem("cur") == "1")
     {
         document.getElementById("flag").src ="pics/dk.png";
         localStorage.setItem("cur", "0");
-        danish();
-        
+        danish();        
     }
     else
     {
         document.getElementById("flag").src ="pics/uk.png";
         localStorage.setItem("cur", "1");
-        english();
-       
+        english();       
     }    
 
 }

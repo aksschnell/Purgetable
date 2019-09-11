@@ -58,6 +58,7 @@ background-color: black;
 
 
 .navbar {  
+  
   overflow: hidden;
   position: absolute;
   left: 50%;
@@ -140,62 +141,41 @@ background-color: black;
 * 
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-
-
 .slideshow-container{
 
 text-align: center;
-position: absolute;
 
 }
 
-.slideshow-container:hover{
-
-  text-align: center;
-  position: absolute;
-
-  
-  }
 
 
 .picbox{
-  position: relative;  
+
   overflow: hidden;  
   
-
-
 }
 
-.picbox:hover{
+  .picbox img{
 
-cursor: pointer;
+  
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
+    height: 50%;
+    object-fit: cover;
+    filter:grayscale(100%);  
 
-}
+  }
 
-.picbox img{
 
- 
-  object-fit: cover; 
-  width: 100%;
-  height: 50%; 
-  transition: all 0.3s;
-  filter:grayscale(100%)
-     
-
-}
 .picbox img:hover{
-
  
-  object-fit: cover; 
+
   width: 100%;
-  height: 50%; 
   transform: scale(1.05);
-  filter:grayscale(0%);
-     
-
+  filter:grayscale(0%);  
+  cursor: pointer;   
 }
-
-
 
 
 .dot {
@@ -235,24 +215,29 @@ color: white;
 }
 
 
- 
-
 
 #flag{
 
-height: 4%;
-object-fit: contain;
-margin: 0 !important;
-float: right;
-padding-right: 15;
-padding-top: 10;
-transition: all 0.3s; 
+position: absolute;
+opacity: 1 !important;
+z-index: 100;
 
+
+overflow: hidden;
+position: absolute;
+left: 60%;
+margin-top: 7px;
+transform: translateX(-50%); 
+opacity: 100%;
+transition: z-index 0s 0s; 
+z-index: 20;
+height: 3%;
+
+  
 }
 
 #flag:hover{
 
-  transform: scale(1.05);
   cursor: pointer;
 
 }

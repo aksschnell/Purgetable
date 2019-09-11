@@ -61,6 +61,7 @@ background-color: black;
 
 
 .navbar {  
+ 
   overflow: hidden;
   position: absolute;
   left: 50%;
@@ -141,28 +142,31 @@ background-color: black;
 
 /* Image knap ting */
 
-
-
-
 #flag{
 
-height: 4%;
-object-fit: contain;
-margin: 0 !important;
-float: right;
-padding-right: 15;
-padding-top: 10;
-transition: all 0.3s; 
-
-}
-
-#flag:hover{
-
-  transform: scale(1.05);
-  cursor: pointer;
-
-}
-
+  position: absolute;
+  opacity: 1 !important;
+  z-index: 100;
+  
+  
+  overflow: hidden;
+  position: absolute;
+  left: 60%;
+  margin-top: 7px;
+  transform: translateX(-50%); 
+  opacity: 100%;
+  transition: z-index 0s 0s; 
+  z-index: 20;
+  height: 3%;
+  
+    
+  }
+  
+  #flag:hover{
+  
+    cursor: pointer;
+  
+  }
 ::-webkit-scrollbar {
   width: 20px;
 }

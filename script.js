@@ -8,13 +8,13 @@ if(localStorage.getItem("cur") == null)
 
     if(localStorage.getItem("cur") == "0")
     {
-        document.getElementById("flag").src ="pics/dk.png";
+        document.getElementById("flag").src ="pics/Dk.png";
         danish();
         
     }
     else
     {
-        document.getElementById("flag").src ="pics/uk.png";
+        document.getElementById("flag").src ="pics/Uk.png";
         english();
         
     }
@@ -25,14 +25,14 @@ function flagClick()
 
     if(localStorage.getItem("cur") == "1")
     {
-        document.getElementById("flag").src ="pics/dk.png";
+        document.getElementById("flag").src ="pics/Dk.png";
         localStorage.setItem("cur", "0");
         danish();
        
     }
     else
     {
-        document.getElementById("flag").src ="pics/uk.png";
+        document.getElementById("flag").src ="pics/Uk.png";
         localStorage.setItem("cur", "1");
         english();
        
